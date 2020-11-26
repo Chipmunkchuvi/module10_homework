@@ -34,3 +34,17 @@ result = arr.reduce(function (previousValue,initialValue,index){
 }
 )
 console.log(result1)
+
+// Решения верные, но оба не оптимальные, очень много избыточных действий. Ниже написала более простое решение
+
+let array = [1, 1, 1, 2];
+let isEqual = true;
+
+for (let i = 1; i < array.length; i++) {
+  if (array[0] !== array[i]) {
+    isEqual = false;
+    break;
+  }
+}
+
+console.log(isEqual);
