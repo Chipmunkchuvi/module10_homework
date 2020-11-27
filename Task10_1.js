@@ -1,7 +1,6 @@
-let value = prompt('Enter variable')
+let value = +prompt('Enter variable')
 // console.log(value)
 // console.log(typeof(value))
-value = +value
 console.log(typeof(value))
 
  if (Number.isInteger(value))
@@ -22,3 +21,5 @@ console.log(typeof(value))
  else {
      console.log("Упс, кажется, вы ошиблись")
  }
+
+ // Всё верно. Код можно чуточку упростить и избавиться от одной строчки :) выше показала
